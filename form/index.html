@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>form</title>
+  </head>
+
+  <body>
+    <form action="#">
+      <label>Youre name:</label>
+      <input type="text" aria-label="Youre name:" />
+      <label>Youre password:</label>
+      <input type="password" />
+      <label>Date </label>
+      <input type="date" />
+      <label> Your favorite color:</label>
+      <input type="color" />
+      <label> Range</label>
+      <input type="range" min="0" max="5" />
+      <label> Number</label>
+      <!--  можем выбать только число, ни букв, ни знаков-->
+      <input type="number" min="0" max="5" />
+      <label> Email</label>
+      <input type="email" />
+    </form>
+    <!--  method = "post"  это метод закрытый, зашифрованный, когда информация
+        чаще всего, так отправляют данные на сервер (регистрация, ввод пароля)
+        - все это нельзя передавать в отервытом виде
+    method= "GET" ,когда что-то, где-то хочу, 
+    formy получают данные сервера , для отображения на страничке 
+    через url-->
+  </body>
+</html>

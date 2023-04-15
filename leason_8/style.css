@@ -1,0 +1,42 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .conteiner {
+            max-width: 1150px;
+            margin: 0 auto;
+        }
+        
+        .conteiner_header {
+            background: url(images/204398-OZ3P4A-964.jpg) no-repeat;
+            /*height: 100vh;
+            background-repeat: no-repeat;*/
+            background-size: 100%;
+            background-position: center;
+        }
+        /*height: 100vh;
+        background-size: cover;*/
+        
+        h1 {
+            color: white;
+            font-weight: 500;
+            font-size: 54px;
+            line-height: 80.19px;
+            font-family: 'Mplus 1p';
+            padding-top: 126px;
+            padding-bottom: 22px;
+            /*padding-left: 149px;
+            padding-right: 537px;*/
+        }
+        
+        h2 {
+            color: white;
+            font-size: 18px;
+            line-height: 25px;
+            letter-spacing: 2px;
+            font-family: 'Mplus 1p';
+            /*padding-left: 149px;*/
+            padding-bottom: 115px;
+        }
