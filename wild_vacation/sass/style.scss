@@ -13,166 +13,7 @@ img {
     background-size: cover;
     background-repeat: no-repeat;
 
-    // input:focus::placeholder {
-    //     color: rgba(107, 104, 104, 0);
-    // }
-
-    input::placeholder {
-        color: #FFF;
-        font-size: 13px;
-        font-weight: 50;
-    }
-
-    select {
-        color: #FFF;
-        font-size: 13px;
-        font-weight: 50;
-    }
-
-    input:focus {
-        outline: none;
-    }
-
-    input:focus::placeholder {
-        outline: none;
-    }
-
-    h2 {
-        margin-bottom: 22px;
-        color: #ffffff;
-        font-size: 20px;
-        font-weight: 500;
-    }
-}
-
-    body {
-        position: relative;
-        font-family: 'Montserrat', sans-serif;
-    }
-
-    .conteiner {
-        width: 1140px;
-        margin: auto;
-    }
-
-    header {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        /* либо witdh: 100%; чтобы header разместился по середине и никуда не уходил*/
-    }
-
-    h3 {
-        color: #FFF;
-        text-align: center;
-        font-size: 34px;
-        font-weight: 500;
-    }
-
-    .greetting__hero {
-        padding-top: 169px;
-        padding-bottom: 205px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .header__wraper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-top: 36px;
-    }
-
-    .header__right {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .header__left {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .header__logo {
-        width: 195px;
-        height: 54px;
-    }
-
-    .change__language a {
-        color: #fff;
-        font-family: 'Montserrat';
-        font-size: 13px;
-        font-weight: 500;
-        line-height: 16px;
-        text-decoration: none;
-        margin-left: 21px;
-    }
-
-    .change__language a:hover {
-        color: rgba(196, 196, 196, 0.50);
-        font-family: 'Montserrat';
-        font-size: 13px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 16px;
-    }
-
-    nav ul li {
-        display: inline-block;
-        margin-left: 40px;
-    }
-
-    nav ul li a {
-        color: #FFF;
-        font-family: 'Montserrat';
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 32px;
-        text-decoration: none;
-    }
-
-    .button__help {
-        margin-left: 17px;
-        flex-shrink: 0;
-        color: #FFF;
-        text-align: center;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 32px;
-        border-radius: 10px;
-        border: 1px solid #FFB800;
-        width: 146px;
-        height: 52px;
-        background-color: transparent;
-    }
-
-    .greeting__titel h1 {
-        color: #FFF;
-        font-size: 48px;
-        font-weight: 500;
-    }
-
-
-
-
-
-    /* ВОТ ЭТО ПОСМОТРЕТЬ ВИДЕО, КАК СДЕЛАТЬ */
-
-
-    .greeting__titel p {
-        margin-top: 26px;
-        color: #FFF;
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 38px;
-    }
-
-    .greeting__tour-search {
+    &__tour-search {
         padding: 51px 70px 55px;
         border-radius: 10px;
         /* закругление */
@@ -181,18 +22,58 @@ img {
         box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.25);
         /* тень бокса */
         backdrop-filter: blur(12px);
+
         /* прозрачность , размытие */
+        button {
+            // width: 360px;
+            margin-top: 22px;
+            color: #333;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 24px;
+            background-color: #FFB800;
+            border-radius: 4px;
+            border: 1px solid #FFB800;
+        }
+
+        input {
+            border-radius: 4px;
+            border: 2px solid rgba(201, 201, 201);
+            font-size: 13px;
+            font-weight: 100;
+
+            ::placeholder {
+                color: #FFF;
+                font-size: 13px;
+                font-weight: 100;
+
+            }
+        }
+
+        select {
+            color: rgb(97, 97, 97);
+            font-size: 13px;
+            font-weight: 50;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        input:focus::placeholder {
+            outline: none;
+            // граница бордера 
+        }
+
+        h2 {
+            margin-bottom: 22px;
+            font-size: 20px;
+            font-weight: 500;
+            color: #FFF;
+        }
     }
 
-    .greeting__tour-search input,
-    .greeting__tour-search select {
-        border-radius: 4px;
-        border: 1px solid #ffffff91;
-    }
-
-    /* .greeting__tour-search-search input, */
-    .greeting__input-long,
-    .greeting__input-shot {
+    &__input-long {
         width: 360px;
         padding: 9px 0px 12px 13px;
         font-size: 13px;
@@ -200,9 +81,7 @@ img {
         background: rgba(51, 51, 51, 0.25);
         font-weight: 500;
     }
-
-
-    .greeting__text-date {
+    &__text-date {
         display: flex;
         justify-content: space-between;
         margin: 21px 0 21px 0;
@@ -210,74 +89,231 @@ img {
         font-size: 13px;
         font-weight: 500;
     }
-
-
-
-
-
-
-    .greeting__input-shot {
+    &__input-shot {
         width: 168px;
+        padding: 9px 0px 12px 13px;
+        font-size: 13px;
+        font-weight: 500;
+        background: rgba(51, 51, 51, 0.25);
+        font-weight: 500;
     }
+}
 
-    .button__form {
-        margin-top: 22px;
-        color: #333;
+
+
+body {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.conteiner {
+    width: 1140px;
+    margin: auto;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* либо witdh: 100%; чтобы header разместился по середине и никуда не уходил*/
+}
+
+h3 {
+    color: #FFF;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 500;
+}
+
+.greetting__hero {
+    padding-top: 169px;
+    padding-bottom: 205px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__wraper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 36px;
+}
+
+.header__right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    width: 195px;
+    height: 54px;
+}
+
+.change__language a {
+    color: #fff;
+    font-family: 'Montserrat';
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+    text-decoration: none;
+    margin-left: 21px;
+}
+
+.change__language a:hover {
+    color: rgba(196, 196, 196, 0.50);
+    font-family: 'Montserrat';
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+nav ul li a {
+    color: #FFF;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    text-decoration: none;
+}
+
+.button__help {
+    margin-left: 17px;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    border-radius: 10px;
+    border: 1px solid #FFB800;
+    width: 146px;
+    height: 52px;
+    background-color: transparent;
+}
+
+.greeting__titel h1 {
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+
+
+
+
+/* ВОТ ЭТО ПОСМОТРЕТЬ ВИДЕО, КАК СДЕЛАТЬ */
+
+
+.greeting__titel p {
+    margin-top: 26px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 38px;
+}
+
+
+
+.greeting__tour-search input,
+.greeting__tour-search select {
+    border-radius: 4px;
+    border: 1px solid #ffffff91;
+}
+
+/* .greeting__tour-search-search input, */
+// .greeting__input-long,
+// .greeting__input-shot {
+//     width: 360px;
+//     padding: 9px 0px 12px 13px;
+//     font-size: 13px;
+//     font-weight: 500;
+//     background: rgba(51, 51, 51, 0.25);
+//     font-weight: 500;
+
+
+
+.greeting__text-date {
+    display: flex;
+    justify-content: space-between;
+    margin: 21px 0 21px 0;
+    color: #FFF;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+
+
+
+
+.greeting__input-shot {
+    width: 168px;
+}
+
+.button__form {
+    margin-top: 22px;
+    color: #333;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    background-color: #FFB800;
+    border-radius: 4px;
+    border: 1px solid #FFB800;
+}
+
+
+.flex__wrapper__picter {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 44px 0 74px;
+
+    p {
+        color: #FFF;
+        text-align: center;
         font-size: 20px;
         font-weight: 500;
         line-height: 24px;
-        background-color: #FFB800;
-        border-radius: 4px;
-        border: 1px solid #FFB800;
     }
 
-
-    .flex__wrapper__picter {
+    div {
+        width: 240px;
         display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         align-items: center;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 44px 0 74px;
-
-        p {
-            color: #FFF;
-            text-align: center;
-            font-size: 20px;
-            font-weight: 500;
-            line-height: 24px;
-        }
-
-        div {
-            width: 240px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        img {
-            width: 73px;
-            height: 72px;
-            margin-bottom: 17px;
-        }
     }
 
-
-    .actual {
-        background: #1B1E22;
-        padding-bottom: 72px;
+    img {
+        width: 73px;
+        height: 72px;
+        margin-bottom: 17px;
     }
-
-    .actual__cards__wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 45px 0 25px;
-    }
+}
 
 
+.actual {
+    background: #1B1E22;
+    padding-bottom: 72px;
 
-    .actual__card {
+    &__card {
         border-radius: 4px;
         background: #23282F;
         width: 361.596px;
@@ -291,126 +327,139 @@ img {
         }
     }
 
-
-
-    .actual__descr {
-        padding: 16px 20px 56px;
-        position: relative;
-
-        h4 {
-            color: #FFF;
-            font-size: 20px;
-            font-weight: 500;
-            line-height: 24px;
-            margin-bottom: 16px;
-        }
-
-        p {
-            color: #FFF;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 20px;
-        }
-
-        a {
-            position: absolute;
-            left: 20px;
-            bottom: 14px;
-            color: rgba(249, 246, 246, 0.519);
-            font-size: 13px;
-            font-style: normal;
-            line-height: 16px;
-            text-decoration: none;
-        }
-    }
-
-
-    /* при наведении на весь блок .actual_card:hover изменяем  .actual_descr h4*/
-    .actual__card:hover .actual__descr h4 {
-        color: #333;
-    }
-
-    .actual__card:hover .actual__descr p {
-        color: #333;
-    }
-
-    .actual__card:hover .actual__descr a {
-        color: rgba(0, 0, 0, 0.5);
-
-    }
-
-    .actual__card:hover {
-        background: #f5f5f5;
-        /* box-shadow: 0px 15px 35px 0px rgba(0, 0, 0, 0.7); */
-        transition: .8s;
-        /* чтобы плано все при менялось при наведении мыши */
-        transform: scale(1.05);
-        /* меняется размер */
-    }
-
-    .actual__img {
-        background: #23282F;
-        position: relative;
-    }
-
-    .actual__price__date {
-        position: absolute;
-        bottom: 25px;
-        left: 0;
+    &__cards__wrapper {
         display: flex;
-        transition: 0.7s;
-        justify-content: center;
-        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 45px 0 25px;
     }
+}
 
 
-    .actual__date {
+
+
+
+
+
+
+.actual__descr {
+    padding: 16px 20px 56px;
+    position: relative;
+
+    h4 {
         color: #FFF;
-        text-align: center;
-        font-size: 13px;
-        font-weight: 500;
-        line-height: 16px;
-        border-radius: 0px 6px 6px 0px;
-        background: rgba(27, 30, 34, 0.75);
-        width: 181px;
-        padding: 8px;
-
-    }
-
-
-    /* вниз опускаем  */
-    .actual__card:hover .actual__price__date {
-        transform: translateY(14px);
-
-        /* bottom: 11px; - то же самое , что и через трансформацию, второй вариант*/
-    }
-
-    .actual__price {
-        color: #1B1E22;
-        text-align: center;
-        font-size: 13px;
-        font-weight: 500;
-        padding: 6px;
-        background: #FFB800;
-        justify-content: center;
-
-    }
-
-    .actual__price span {
-        color: #1B1E22;
         font-size: 20px;
-        font-weight: 700;
+        font-weight: 500;
+        line-height: 24px;
+        margin-bottom: 16px;
     }
 
-    .actual__card:hover .actual__price span {
-        font-size: 24px;
-        font-weight: 700;
-        transition: .8s;
+    p {
+        color: #FFF;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
     }
 
-    /* transfotm - изменять */
+    a {
+        position: absolute;
+        left: 20px;
+        bottom: 14px;
+        color: rgba(249, 246, 246, 0.519);
+        font-size: 13px;
+        font-style: normal;
+        line-height: 16px;
+        text-decoration: none;
+    }
+}
 
-    /* 1. масштабирование - ЧАСТО ИСПОЛЬЗУЕТСЯ
+
+/* при наведении на весь блок .actual_card:hover изменяем  .actual_descr h4*/
+.actual__card:hover .actual__descr h4 {
+    color: #333;
+}
+
+.actual__card:hover .actual__descr p {
+    color: #333;
+}
+
+.actual__card:hover .actual__descr a {
+    color: rgba(0, 0, 0, 0.5);
+
+}
+
+.actual__card:hover {
+    background: #f5f5f5;
+    /* box-shadow: 0px 15px 35px 0px rgba(0, 0, 0, 0.7); */
+    transition: .8s;
+    /* чтобы плано все при менялось при наведении мыши */
+    transform: scale(1.05);
+    /* меняется размер */
+}
+
+.actual__img {
+    background: #23282F;
+    position: relative;
+}
+
+.actual__price__date {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    display: flex;
+    transition: 0.7s;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.actual__date {
+    color: #FFF;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+    border-radius: 0px 6px 6px 0px;
+    background: rgba(27, 30, 34, 0.75);
+    width: 181px;
+    padding: 8px;
+
+}
+
+
+/* вниз опускаем  */
+.actual__card:hover .actual__price__date {
+    transform: translateY(14px);
+
+    /* bottom: 11px; - то же самое , что и через трансформацию, второй вариант*/
+}
+
+.actual__price {
+    color: #1B1E22;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 6px;
+    background: #FFB800;
+    justify-content: center;
+
+}
+
+.actual__price span {
+    color: #1B1E22;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.actual__card:hover .actual__price span {
+    font-size: 24px;
+    font-weight: 700;
+    transition: .8s;
+}
+
+/* transfotm - изменять */
+
+/* 1. масштабирование - ЧАСТО ИСПОЛЬЗУЕТСЯ
 transform:scale();  - размер изменяет, это функция(параметр - во сколько раз мы маштабируем обьект) 
  transform:scale(1.5) - увеличиваем в полтора раза;
   transform:scale(2) - увеличиваем в два раза;
@@ -443,45 +492,33 @@ transform:scale();  - размер изменяет, это функция(па�
    */
 
 
-    .actual_button {
-        color: #FFF;
-        /* text-align: center; */
-        font-size: 20px;
-        font-weight: 500;
-        width: 217px;
-        height: 48px;
-        background: rgba(27, 30, 34, 0.177);
-        border-radius: 4px;
-        border: 1px solid #FFB800;
-        /* justify-content: center;
-    display: flex;
-    text-align: center; */
-        /* text-align: center; */
-        margin: 0 auto;
-        display: block;
-    }
+.actual_button {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 500;
+    width: 217px;
+    height: 48px;
+    background: rgba(27, 30, 34, 0.177);
+    border-radius: 4px;
+    border: 1px solid #FFB800;
+    margin: 0 auto;
+    display: block;
+}
 
-    .smth {
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 2.91%, rgba(27, 30, 34, 0.4) 49.31%, #1b1e22 93.77%), url(../images/bg_banner.png);
-        background-size: cover;
-        /*background-position: center;*/
-        background-repeat: no-repeat;
-    }
+.smth {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 2.91%, rgba(27, 30, 34, 0.4) 49.31%, #1b1e22 93.77%), url(../images/bg_banner.png);
+    background-size: cover;
+    /*background-position: center;*/
+    background-repeat: no-repeat;
 
-    /*.smth .conteiner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}*/
-
-    .smth__wrapper {
+    &__wrapper {
         display: flex;
         justify-content: space-around;
         align-items: center;
         padding: 61px 0 68px 0;
     }
 
-    .smth__number-text {
+    &__number-text {
         display: flex;
         flex-direction: column;
         align-items: space-around;
@@ -489,7 +526,7 @@ transform:scale();  - размер изменяет, это функция(па�
         /* justify-content: space-around; */
     }
 
-    .smth__number {
+    &__number {
         color: #FFB800;
         text-align: center;
         font-size: 78px;
@@ -499,123 +536,124 @@ transform:scale();  - размер изменяет, это функция(па�
         /* align-items: center; */
     }
 
-    .smth__text {
+    &__text {
         color: #FFF;
         text-align: center;
         font-size: 20px;
         font-weight: 500;
 
     }
+}
 
-    .our_blok {
-        background: #1B1E22;
+.our_blok {
+    background: #1B1E22;
 
-        &__wraper {
-            display: flex;
-            justify-content: space-between;
-            padding: 44px 0 49px 0;
-        }
-
-        &__left {
-            border-radius: 4px;
-            background: linear-gradient(180deg, rgba(31, 31, 31, 0.65) 2.91%, rgba(31, 31, 31, 0.65), rgba(31, 31, 31, 0.65) 93.77%), url(../images/bg_our_blok.jpg) center/cover no-repeat;
-            width: 552px;
-            height: 480px;
-            position: relative;
-            margin-right: 25px;
-
-            p {
-                position: absolute;
-                top: 51px;
-                text-align: center;
-                font-size: 34px;
-                color: #fff;
-                margin-left: 16px;
-            }
-        }
-
-        &__right {
-            display: flex;
-            justify-content: space-between;
-
-        }
-
-        &__wraper-block {
-            margin-right: 21px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            width: 264px;
-            border-radius: 4px;
-            background: #23282F;
-            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
-            padding-bottom: 21px;
-        }
-
-        &__wraper-left {
-            display: flex;
-            justify-content: space-between;
-            color: rgba(255, 255, 255, 0.50);
-            font-size: 13px;
-            font-weight: 400;
-        }
-
-        &__picter-number {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        &__pict {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        &__text {
-            display: flex;
-            padding: 20px 20px 45px 20px;
-            flex-direction: column;
-            justify-content: space-between;
-            // align-items:space-between;
-
-            h5 {
-                color: #FFF;
-                font-size: 20px;
-                font-weight: 500;
-                margin-bottom: 14px;
-                // text-align: center;
-            }
-
-            p {
-                color: #FFF;
-                font-size: 14px;
-                font-weight: 400;
-            }
-        }
-
+    &__wraper {
+        display: flex;
+        justify-content: space-between;
+        padding: 44px 0 49px 0;
     }
 
-    .reviews {
-        padding: 62px 0 54px 0;
-        background: #1B1E22;
+    &__left {
+        border-radius: 4px;
+        background: linear-gradient(180deg, rgba(31, 31, 31, 0.65) 2.91%, rgba(31, 31, 31, 0.65), rgba(31, 31, 31, 0.65) 93.77%), url(../images/bg_our_blok.jpg) center/cover no-repeat;
+        width: 552px;
+        height: 480px;
+        position: relative;
+        margin-right: 25px;
 
-        &__text {
-            color: #FFF;
+        p {
+            position: absolute;
+            top: 51px;
             text-align: center;
-            font-size: 24px;
-            font-weight: 400;
-        }
-
-        &__name {
-            color: #FFB800;
-            font-size: 16px;
-            font-weight: 600;
-            margin-top: 6px;
-        }
-
-        &__gratitude-clients {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
+            font-size: 34px;
+            color: #fff;
+            margin-left: 16px;
         }
     }
+
+    &__right {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__wraper-block {
+        margin-right: 21px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 264px;
+        border-radius: 4px;
+        background: #23282F;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+        padding-bottom: 21px;
+    }
+
+    &__wraper-left {
+        display: flex;
+        justify-content: space-between;
+        color: rgba(255, 255, 255, 0.50);
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    &__picter-number {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__pict {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__text {
+        display: flex;
+        padding: 20px 20px 45px 20px;
+        flex-direction: column;
+        justify-content: space-between;
+        // align-items:space-between;
+
+        h5 {
+            color: #FFF;
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 14px;
+            // text-align: center;
+        }
+
+        p {
+            color: #FFF;
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+
+}
+
+.reviews {
+    padding: 62px 0 54px 0;
+    background: #1B1E22;
+
+    &__text {
+        color: #FFF;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    &__name {
+        color: #FFB800;
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 6px;
+    }
+
+    &__gratitude-clients {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

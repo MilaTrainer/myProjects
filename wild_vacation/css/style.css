@@ -14,34 +14,86 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.greeting input::-moz-placeholder {
-  color: #FFF;
-  font-size: 13px;
-  font-weight: 50;
+.greeting__tour-search {
+  padding: 51px 70px 55px;
+  border-radius: 10px;
+  /* закругление */
+  background: rgba(51, 51, 51, 0.25);
+  /* заливка */
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.25);
+  /* тень бокса */
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+  /* прозрачность , размытие */
 }
-.greeting input::placeholder {
-  color: #FFF;
-  font-size: 13px;
-  font-weight: 50;
-}
-.greeting select {
-  color: #FFF;
-  font-size: 13px;
-  font-weight: 50;
-}
-.greeting input:focus {
-  outline: none;
-}
-.greeting input:focus::-moz-placeholder {
-  outline: none;
-}
-.greeting input:focus::placeholder {
-  outline: none;
-}
-.greeting h2 {
-  margin-bottom: 22px;
-  color: #ffffff;
+.greeting__tour-search button {
+  margin-top: 22px;
+  color: #333;
   font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  background-color: #FFB800;
+  border-radius: 4px;
+  border: 1px solid #FFB800;
+}
+.greeting__tour-search input {
+  border-radius: 4px;
+  border: 2px solid rgb(201, 201, 201);
+  font-size: 13px;
+  font-weight: 100;
+}
+.greeting__tour-search input ::-moz-placeholder {
+  color: #FFF;
+  font-size: 13px;
+  font-weight: 100;
+}
+.greeting__tour-search input ::placeholder {
+  color: #FFF;
+  font-size: 13px;
+  font-weight: 100;
+}
+.greeting__tour-search select {
+  color: rgb(97, 97, 97);
+  font-size: 13px;
+  font-weight: 50;
+}
+.greeting__tour-search input:focus {
+  outline: none;
+}
+.greeting__tour-search input:focus::-moz-placeholder {
+  outline: none;
+}
+.greeting__tour-search input:focus::placeholder {
+  outline: none;
+}
+.greeting__tour-search h2 {
+  margin-bottom: 22px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #FFF;
+}
+.greeting__input-long {
+  width: 360px;
+  padding: 9px 0px 12px 13px;
+  font-size: 13px;
+  font-weight: 500;
+  background: rgba(51, 51, 51, 0.25);
+  font-weight: 500;
+}
+.greeting__text-date {
+  display: flex;
+  justify-content: space-between;
+  margin: 21px 0 21px 0;
+  color: #FFF;
+  font-size: 13px;
+  font-weight: 500;
+}
+.greeting__input-shot {
+  width: 168px;
+  padding: 9px 0px 12px 13px;
+  font-size: 13px;
+  font-weight: 500;
+  background: rgba(51, 51, 51, 0.25);
   font-weight: 500;
 }
 
@@ -166,19 +218,6 @@ nav ul li a {
   line-height: 38px;
 }
 
-.greeting__tour-search {
-  padding: 51px 70px 55px;
-  border-radius: 10px;
-  /* закругление */
-  background: rgba(51, 51, 51, 0.25);
-  /* заливка */
-  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.25);
-  /* тень бокса */
-  -webkit-backdrop-filter: blur(12px);
-          backdrop-filter: blur(12px);
-  /* прозрачность , размытие */
-}
-
 .greeting__tour-search input,
 .greeting__tour-search select {
   border-radius: 4px;
@@ -186,16 +225,6 @@ nav ul li a {
 }
 
 /* .greeting__tour-search-search input, */
-.greeting__input-long,
-.greeting__input-shot {
-  width: 360px;
-  padding: 9px 0px 12px 13px;
-  font-size: 13px;
-  font-weight: 500;
-  background: rgba(51, 51, 51, 0.25);
-  font-weight: 500;
-}
-
 .greeting__text-date {
   display: flex;
   justify-content: space-between;
@@ -251,14 +280,6 @@ nav ul li a {
   background: #1B1E22;
   padding-bottom: 72px;
 }
-
-.actual__cards__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 45px 0 25px;
-}
-
 .actual__card {
   border-radius: 4px;
   background: #23282F;
@@ -269,6 +290,12 @@ nav ul li a {
 .actual__card img {
   width: 361.596px;
   height: 216.607px;
+}
+.actual__cards__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 45px 0 25px;
 }
 
 .actual__descr {
@@ -410,7 +437,6 @@ transform:scale();  - размер изменяет, это функция(па�
    */
 .actual_button {
   color: #FFF;
-  /* text-align: center; */
   font-size: 20px;
   font-weight: 500;
   width: 217px;
@@ -418,10 +444,6 @@ transform:scale();  - размер изменяет, это функция(па�
   background: rgba(27, 30, 34, 0.177);
   border-radius: 4px;
   border: 1px solid #FFB800;
-  /* justify-content: center;
-  display: flex;
-  text-align: center; */
-  /* text-align: center; */
   margin: 0 auto;
   display: block;
 }
@@ -432,19 +454,12 @@ transform:scale();  - размер изменяет, это функция(па�
   /*background-position: center;*/
   background-repeat: no-repeat;
 }
-
-/*.smth .conteiner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}*/
 .smth__wrapper {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 61px 0 68px 0;
 }
-
 .smth__number-text {
   display: flex;
   flex-direction: column;
@@ -452,7 +467,6 @@ transform:scale();  - размер изменяет, это функция(па�
   /* height: 243px; */
   /* justify-content: space-around; */
 }
-
 .smth__number {
   color: #FFB800;
   text-align: center;
@@ -462,7 +476,6 @@ transform:scale();  - размер изменяет, это функция(па�
   /* height: 268px; */
   /* align-items: center; */
 }
-
 .smth__text {
   color: #FFF;
   text-align: center;
