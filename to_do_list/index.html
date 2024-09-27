@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Document</title>
+  <script src="./app.js" defer></script>
+</head>
+
+<body>
+  <div class="conteiner">
+
+    <h3>Just do it.</h3>
+    <form class="railway">
+      <!-- <div class="stripes-block">
+        <div class="line"></div>
+      </div> -->
+
+      <div class="form-group">
+        <div class="conteiner_for_input">
+          <div class="name_left">
+            <label for="name">Enter a task name</label>
+            <input type="text" id="name" placeholder="Task name" />
+          </div>
+          <div class="name_right">
+            <label for="pass">Enter the author of the task</label>
+            <input type="text" id="pass" placeholder="Author of the task" />
+          </div>
+        </div>
+        <select id="select">
+          <option hidden value="">Select task status</option>
+          <option value="inprogress">In progress</option>
+          <option value="dedline">Dedline</option>
+          <option value="error">Error</option>
+        </select>
+
+      </div>
+      <div class="submit-block">
+        <!-- <div class="submit-button"> -->
+        <i class="fa fa-train" aria-hidden="true"></i><br />
+        <input type="button" id="btnSend" value="Отправить" />
+        <!-- </div> -->
+      </div>
+      <h4 class="text_err opacity">Please fill in the fields</h4>
+    </form>
+    <div class="cosntainer_task">
+      <ol class="list_task">
+        
+      </ol>
+    </div>
+  </div>
+  <!-- <script src="./app.js"></script> -->
+</body>
+
+</html>
