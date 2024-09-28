@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.conteiner {
+  max-width: 1200px;
+}
+.conteiner .wrapper__div {
+  padding: 30px;
+  margin: 0 auto;
+}
+.conteiner .wrapper__div .info-item {
+  display: none;
+}
+.conteiner .wrapper__div .info-item.active {
+  display: block;
+}
+.conteiner .nav {
+  padding-left: 30px;
+}/*# sourceMappingURL=sass.css.map */

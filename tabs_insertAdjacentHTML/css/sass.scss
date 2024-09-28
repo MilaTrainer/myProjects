@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.conteiner {
+    max-width: 1200px;
+
+    .wrapper__div {
+        padding: 30px;
+        margin: 0 auto;
+
+
+        .info-item {
+            display: none;
+        }
+
+        .info-item.active {
+            display: block;
+        }
+    }
+
+    .nav {
+        padding-left: 30px;
+    }
+}
