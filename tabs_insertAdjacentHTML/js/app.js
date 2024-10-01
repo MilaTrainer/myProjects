@@ -19,20 +19,6 @@ window.addEventListener('DOMContentLoaded', () => {
     const tabContainer = document.querySelector('.nav-tabs');
     const blockContainer = document.querySelector('.wrapper__div');
 
-    // function getArray(array) {
-    //     array.forEach((item) => {
-    //         // формировать разметку и закидывать ее в Wraper
-    //         // куда / что- HTML как текст / (куда - after begin- в самое начало, before-end- в конец )
-    //         tabContainer.insertAdjacentHTML('afterbegin', `
-    //             <li class="nav-item">
-    //             <a class="nav-link" aria-current="page" href="#">${item.titel}</a>
-    //         </li>`)
-    //         blockContainer.insertAdjacentHTML('afterbegin', `
-    //             <div class="info-item active">
-    //             <h2>${item.titel}</h2>
-    //             <p>${item.text} </p></div>`) }) return}
-    // getArray(arryDate);
-
     arryDate.forEach(item => {// формировать разметку и закидывать ее в Wraper
         // куда / что- HTML как текст / (куда - after begin- в самое начало, before-end- в конец )
         tabContainer.insertAdjacentHTML('beforeend', `
@@ -41,7 +27,7 @@ window.addEventListener('DOMContentLoaded', () => {
             </li>`);
 
         blockContainer.insertAdjacentHTML('beforeend', `
-                <div class="info-item active">
+                <div class="info-item">
                 <h2>${item.titel}</h2>
                 <p>${item.text} </p></div>`);
     });
